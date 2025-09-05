@@ -1,12 +1,23 @@
 # Autonomous Navigator in ROS 2 (TurtleBot3 + Gazebo)
 
-🚀 This project demonstrates a simple autonomous navigation system using **ROS 2 Humble**, **Nav2**, and **Gazebo**.  
+🚀 A simple autonomous navigation demo using **ROS 2 Humble**, **Nav2**, and **Gazebo**.  
 The robot localizes itself and autonomously navigates to a target location while avoiding obstacles.  
 
-## How to Run
-```bash
-# Terminal 1 - Launch house world
-ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+## Demo
+![Gazebo](images/gazebo_world.png)
+![RViz](images/rviz_goal.png)
 
-# Terminal 2 - Launch Nav2
-ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
+## Features
+- Robot localization (AMCL)
+- Autonomous navigation with Nav2
+- Obstacle avoidance
+- Runs fully in simulation (Gazebo)
+
+## Requirements
+- ROS 2 Humble
+- TurtleBot3 packages
+- Nav2 stack
+- Gazebo
+
+## How to Run
+See [launch_instructions.md](launch_instructions.md).
